@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block content %}
+<div class="container-fluid login_container">
+        <div class="card bg-dark" style="width: 400px;margin-left: 30%;color:yellow;opacity: .8;">
+            <div class="card-header text-center"><strong>Login Form</strong></div>
+            <div class="card-body">
+                <form action="" method="POST" >
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="email">
+                                Email-ID
+                            </label>
+                            <input type="email" name="email" class="form-control" placeholder="Enter your Email">
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="password">
+                                Password
+                            </label>
+                            <input type="password" class="form-control" name="password" placeholder="Enter your Password">
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <button type="button" id="login_btn" class="btn btn-sm btn-warning form-control">Login</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="">
+                    <p><a href="/SBT/signup">New User? Signup.</a></p>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock content %}
